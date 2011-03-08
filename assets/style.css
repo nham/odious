@@ -1,0 +1,104 @@
+body {
+  background-color: #333333;
+  font-family: arial, helvetica, sans-serif;
+  margin: 0;
+}
+
+header, footer, section, article, nav {
+  display: block;
+}
+
+a {
+  color: #3276c9;
+}
+
+img {
+  border: 0;
+}
+
+#page {
+  width: 720px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+input[type=text] {
+  width: 600px;
+  padding: 3px;
+}
+
+textarea {
+  width: 640px;
+  height: 500px;
+  padding: 3px 4px;
+  overflow: auto;
+}
+
+
+/* header stuff */
+#page > header {
+  background: url(lacking_refinement.jpg) no-repeat;
+  height: 100px;
+}
+
+#blog-title {
+  display: block;
+  margin: 0;
+}
+
+#blog-title a {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: 100px 0 0;
+  width: 420px;
+}
+
+
+section#content {
+  padding: 0 10px;
+  margin: 15px 0 50px 0;
+}
+
+
+/* article formatting */
+h1.title {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+article span.date {
+  font-size: 13px;
+  font-style: italic;
+  color: #7f7f7f;
+}
+
+section#content > article {
+  line-height: 24px;
+  font-size: 15px;
+}
+
+
+/* index formatting */
+ul#index-list {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  line-height: 24px;
+}
+
+ul#index-list a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ul#index-list span.date {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+
+

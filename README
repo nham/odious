@@ -1,0 +1,35 @@
+Odious
+======
+
+## Overview
+
+Odious is a minimalist PHP blog inspired by toto. The goal is to write something that:
+
+ 1. doesn't take up a bunch of space (Wordpress 3 is pushing 8 mb!)
+ 2. doesn't require a database
+ 3. is easy to hack
+
+
+## Post file format
+Posts files consist of a list of key-value pairs, followed by a blank line, followed by the text of the post. For example:
+
+    title: My Blog Entry
+    timestamp: 1294745953
+
+    Hello and welcome to my blog. Blah blah blah...
+
+By default the only two fields associated with a post are "title" and "timestamp," but Odious will automatically parse custom fields.
+ 
+The text files follow a naming convention of "YYYY-MM-DD-post-slug.txt", so the example post file above might be named "2011-01-11-my-blog-entry.txt". Posts are formatted with Markdown (PHP Markdown Extra).
+
+
+There will be a lightweight web interface for creating/editing posts, probably just a textarea. This necessitates authentication, which I'm thinking I'll take care of via a password which will be set during "installation." I'm fairly sure the mechanism will be built directly into index.php, and will simply detect if the password file contains anything. The password will be stored using bcrypt (crypt() in PHP).
+
+
+## Installation
+To collect, the installation procedure should go roughly as follows:
+
+1) download the files and plop them on your server
+2) Edit config variables? Only thing I can think of is site url. 
+3) make password file and articles folder writable
+4) visit index.php, set password.

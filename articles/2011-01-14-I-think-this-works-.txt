@@ -1,0 +1,8 @@
+title: I think this works.
+timestamp: 1295006040
+
+So I rolled my own blogging software. Why would I do that? One reason was that I downloaded Wordpress 3, and it filled me with dread when I realized that it was nearly 8 mb unzipped. *Ugh.* So I thought I could do better. Plus it had been awhile since I\'d slung PHP, and since that\'s how I [got my start](http://xmbforum.com/) programming I thought I\'d return to my roots for a bit.
+
+It\'s very barebones at the moment, with the whole thing weighing in in under 400 lines of code (not counting libraries of course). I\'m using [GluePHP](http://gluephp.com/) for routing, [PHP Markdown Extra](http://michelf.com/projects/php-markdown/extra/) for post formatting, [Disqus](http://disqus.com/) for comments and [phpass](http://www.openwall.com/phpass/) for password hashing. This last bit allows me to store the blog password in a [plain text file](http://nham.nfshost.com/odious/pw.txt). Unless I\'m missing something, you can\'t do anything with it (thx [bcrypt](http://codahale.com/how-to-safely-store-a-password/)).
+
+I\'m also not using a database; posts are stored in text files. This makes installation non-existent (provided that PHP can write files), and the whole thing just works. I\'ll be getting the code up on github tomorrow, and hopefully I\'ll get around to cleaning it up sometime or other.
